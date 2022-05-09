@@ -41,8 +41,8 @@
                     <div class="col-md-12 justify-content-center">
                       <ul class="list-unstyled menu">
                         <li><a href="index.html" class="animsition-link">Inicio</a></li>
-                        <li><a href="form.html" class="animsition-link">Envíanos tu imagen</a></li>
-                        <li class="active"><a href="about.html" class="animsition-link">Contacta con nosotros</a></li>
+                          <li class="active"><a href="form.html" class="animsition-link">Envíanos tu imagen</a></li>
+                        <li><a href="about.html" class="animsition-link">Contacta con nosotros</a></li>
                       </ul>
                     </div>
                   </div>
@@ -54,35 +54,69 @@
       </div>
     </header>
 
-    <section class="site-hero overlay page-inside" style="background-image: url(images/hero_2.jpg)">
+    <section class="site-hero overlay page-inside" style="background-image: url(images/hero_4.jpg)">
       <div class="container">
         <div class="row site-hero-inner justify-content-center align-items-center">
           <div class="col-md-10 text-center">
-            <h1 class="heading" data-aos="fade-up">¡Contacta con nosotros!</h1>
+            <h1 class="heading" data-aos="fade-up">Formulario</h1>
             <p class="sub-heading mb-5" data-aos="fade-up" data-aos-delay="100">
-              Envíanos un correo si tienes algún problema
+              ¡Rellena los datos y envíanos un recuerdo de tu viaje!
             </p>
           </div>
         </div>
       </div>
     </section>
     
-
     <section class="section contact-section">
       <div class="container">
         <div class="row">
-          <div class="col-md-5">
-            <div class="row">
-              <div class="col-md-10 ml-auto contact-info">
-                <p><span class="d-block">Dirección:</span> <span>C/Tulipán, 28933 - Móstoles, España</span></p>
-                <p><span class="d-block">Teléfono:</span> <span>635 729 603</span></p>
-                <p><span class="d-block">Correo eletrónico:</span> <span>contacto@visitabrujas.es</span></p>
+          <div class="col-md-12">
+            
+            <form action="#" name="formulario" method="post" enctype="multipart/form-data" class="bg-white p-md-5 p-4 mb-5">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <label for="name">Nombre</label>
+                  <input type="text" id="name" class="form-control ">
+                </div>
+                <div class="col-md-6 form-group">
+                  <label for="phone">Número de teléfono</label>
+                  <input type="text" id="phone" class="form-control ">
+                </div>
               </div>
-            </div>
+          
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <label for="email">Correo eletrónico</label>
+                  <input type="email" id="email" class="form-control ">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <label for="message">Breve descripción de tu viaje</label>
+                  <textarea name="message" id="message" class="form-control " cols="30" rows="8"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <label for="image">Seleccionar imagen</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <input type="file" id="image" accept=".png, .jpg" value="Seleccionar imagen">
+                </div>
+              </div>  
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <input type="submit" value="Enviar imagen" class="btn btn-primary">
+                </div>
+              </div>
+            </form>
+
           </div>
         </div>
       </div>
-    </section>    
+    </section>
 
     <footer class="section footer-section">
     </footer>
